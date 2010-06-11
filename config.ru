@@ -13,7 +13,8 @@ end
 # Create and configure a toto instance
 #
 toto = Toto::Server.new do
-  #
+  
+  set :url,     'http://daria-ro-blog.heroku.com'
   # Add your settings here
   # set [:setting], [value]
   # 
