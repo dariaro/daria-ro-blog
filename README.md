@@ -1,6 +1,8 @@
-# Daria_ro's blog #
+Daria_ro's blog
+===============
 
-## To-do ##
+To-do
+-----
 1. Add Haml+Sass
 2. 
 
