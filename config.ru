@@ -1,5 +1,4 @@
 require 'toto'
-require 'haml'
 
 use Rack::Static, :urls => ['/css', '/js', '/images', '/favicon.ico'], :root => 'public'
 use Rack::CommonLogger
@@ -20,9 +19,6 @@ toto = Toto::Server.new do
   set :summary,   :max => 150, :delim => /~/                # length of article summary and delimiter
   # set :disqus,    false                                     # disqus id, or false
   # set :cache,      28800                                    # cache duration, in seconds
-  set :to_html do |path, page, ctx|
-      Haml::Engine.new(File.read("#{path}/#{page}.haml"), :format => :html5, :ugly => true).render(ctx)
-    end
 
 end
 
