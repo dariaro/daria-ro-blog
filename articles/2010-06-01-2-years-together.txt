@@ -1,7 +1,10 @@
 title: 2 Years Together
 author: @daria_ro
 date: 2010/06/1
+header: "2 года вместе!"
 
 Сегодня у нас маленький праздник – мы вместе 2 года! Я и Сашик.
+
+![Odessa img-001](http://daria-ro-blog.s3.amazonaws.com/1006/daria-ro-blog-2-years-001.jpg)
 
 И вечером мы обязательно выпьем бокал шампанского за это. ;)

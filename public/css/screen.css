@@ -78,12 +78,12 @@ body {
 /* Links --------------------------------------------------------------*/
 /* line 21, ../src/_defaults.scss */
 a:link, a:visited {
-  color: black;
+  color: red;
   text-decoration: none;
 }
 /* line 25, ../src/_defaults.scss */
 a:focus, a:hover, a:active {
-  color: gray;
+  color: #660000;
   text-decoration: none;
 }
 /* line 29, ../src/_defaults.scss */
@@ -369,15 +369,22 @@ body {
   margin-right: auto;
   width: 61em;
   max-width: 100%;
+  background-image: url('/images/grid.png?1276450653');
+  background-repeat: repeat;
+  background-position: 1em 0;
 }
 /* line 8, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
 #page {
   display: block;
 }
+/* line 16, ../src/screen.scss */
+#page * {
+  background-color: rgba(0, 0, 0, 0.125);
+}
 
 /* line 21, ../src/screen.scss */
 body {
-  border-top: 2px solid black;
+  border-top: 2px solid red;
 }
 
 /* Header --------------------------------------------------------------*/
@@ -386,15 +393,15 @@ header[role="logo"] {
   clear: both;
   margin-right: 1.639%;
   margin-left: 1.639%;
-  padding-left: 8.197%;
-  padding-right: 57.377%;
+  padding-left: 0%;
+  padding-right: 73.77%;
   margin-bottom: 3em;
 }
 /* line 31, ../src/screen.scss */
 header[role="logo"] h1 {
-  padding: 1em 0;
+  padding: 0.5em 0;
   text-align: center;
-  background-color: black;
+  background-color: red;
 }
 /* line 37, ../src/screen.scss */
 header[role="logo"] a {
@@ -404,17 +411,16 @@ header[role="logo"] a {
 
 /* Content --------------------------------------------------------------*/
 /* line 45, ../src/screen.scss */
-section#articles {
+section#articles, .archives {
   display: inline;
   float: left;
-  width: 55.738%;
+  width: 63.934%;
   margin-right: 1.639%;
   margin-left: 1.639%;
-  padding-left: 8.197%;
   margin-bottom: 6em;
 }
 /* line 50, ../src/screen.scss */
-section#articles .post {
+section#articles .post, .archives .post {
   margin-bottom: 1.5em;
 }
 
@@ -430,24 +436,39 @@ aside {
   /* ugly hacks for IE6-7 */
   #margin-left: -1em;
   padding-left: 5.464%;
-  border-left: 1px dotted #CCCCCC;
+  border-left: 1px dotted red;
 }
 
 /* line 63, ../src/screen.scss */
-ul.archives {
+.archive_set ul {
+  display: inline;
+  float: left;
+  width: 87.179%;
+  margin-right: 2.564%;
+  display: inline;
+  float: right;
+  margin-right: 0;
+  /* ugly hacks for IE6-7 */
+  #margin-left: -1em;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 /* line 11, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/lists/_bullets.scss */
-ul.archives li {
+.archive_set ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0px;
 }
 
+/* line 73, ../src/screen.scss */
+img,
+object {
+  max-width: 100%;
+}
+
 /* Nav --------------------------------------------------------------*/
-/* line 69, ../src/screen.scss */
+/* line 79, ../src/screen.scss */
 p.archive_link {
   text-align: center;
   padding: 0.5em 0;
@@ -455,15 +476,14 @@ p.archive_link {
 }
 
 /* Footer --------------------------------------------------------------*/
-/* line 78, ../src/screen.scss */
+/* line 88, ../src/screen.scss */
 footer {
   clear: both;
   margin-right: 1.639%;
   margin-left: 1.639%;
-  padding-left: 8.197%;
   margin-bottom: 3em;
 }
-/* line 82, ../src/screen.scss */
+/* line 92, ../src/screen.scss */
 footer #toto {
   float: right;
   text-align: right;

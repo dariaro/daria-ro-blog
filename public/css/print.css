@@ -78,12 +78,12 @@ body {
 /* Links --------------------------------------------------------------*/
 /* line 21, ../src/_defaults.scss */
 a:link, a:visited {
-  color: black;
+  color: red;
   text-decoration: none;
 }
 /* line 25, ../src/_defaults.scss */
 a:focus, a:hover, a:active {
-  color: gray;
+  color: #660000;
   text-decoration: none;
 }
 /* line 29, ../src/_defaults.scss */

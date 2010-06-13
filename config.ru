@@ -17,7 +17,9 @@ toto = Toto::Server.new do
   set :root, "index"                                   # page to load on /
   set :markdown, :smart                                    # use markdown + smart-mode
   set :summary, :max => 150, :delim => /~/                # length of article summary and delimiter
-  # set :disqus,    false                                     # disqus id, or false
+#  set :disqus, "daria-ro-blog"                                     # disqus id, or false
+  set :disqus, "disqus_developer = 1"                                     # disqus id, or false
+
   # set :cache,      28800                                    # cache duration, in seconds
 
 end

@@ -23,7 +23,7 @@ a {
 	text-decoration: none;
   }
   &:focus, &:hover, &:active {
-    color: lighten($alt,50%);
+    color: darken($alt,30%);
     text-decoration: none;
   }
   img {

@@ -1,13 +1,16 @@
 <section class="archives">
-	<h1><%= @path %></h1>
-	<ul>
-  		<% if archives.length > 0 %>
-    	<% for entry in archives %>
-      	<li>
-        	<a href="<%= entry.path %>"><%= entry.title %></a>
-      	</li>
-    	<% end %>
-  		<% end %>
-	</ul>
+	<h1>Все посты</h1>
+	<section class="archive_set">
+		<span class="archive_year">2010</span>
+		<ul>
+  			<% if archives.length > 0 %>
+    		<% for entry in archives %>
+      		<li>
+        		<a href="<%= entry.path %>"><%= entry.header %></a>
+      		</li>
+    		<% end %>
+  			<% end %>
+		</ul>
+	</section>
 </section>
 
