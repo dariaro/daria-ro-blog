@@ -20,9 +20,10 @@ body {
 a {
   &:link, &:visited {
     color: $alt;
+	text-decoration: none;
   }
   &:focus, &:hover, &:active {
-    color: darken($alt,5);
+    color: lighten($alt,50%);
     text-decoration: none;
   }
   img {
@@ -33,7 +34,7 @@ a {
 /* Headings --------------------------------------------------------------*/
 
 h1, h2, h3, h4, h5, h6 { 
-  font-weight: normal;
+  font-weight: bold;
   img {
     margin: 0;
   }
@@ -54,12 +55,7 @@ h3 {
   @include trailer(1,24px);
 }
 
-h4 {
-  @include adjust-font-size-to(18px);
-  @include trailer(1,18px);
-}
-
-h5, h6 { 
+h4, h5, h6 { 
   @include trailer(1);
   font-weight: bold;
 }

@@ -10,14 +10,77 @@
 
 @include susy;
 
-// change '#page' to match your HTML container element(s)
 #page {
   @include container;
-  @include show-grid("grid.png"); }
+//  @include show-grid("grid.png");
+  * {
+//    background-color: rgba(0,0,0,.125);
+  }
+}
 
-// show-grid loads a 64+16x24 grid image by default
-// For other grid settings, run `compass grid-img 30+10x20`
-// Where 30 is the column width, 10 is the gutter width, 
-// and 20 is the (optional) line-height.
+body {
+  border-top: 2px solid black;
+}
 
-/* Styles --------------------------------------------------------------*/
+/* Header --------------------------------------------------------------*/
+
+header[role="logo"] {
+  @include full;
+  @include pad(1,7);
+  @include trailer(2);
+  h1 {
+    padding: 1em 0;
+    text-align:center;
+	background-color: black;
+//	border: 1px dotted #CCCCCC;
+    }	
+	a {
+	  color: white;
+	  text-decoration: none;
+	  }
+}
+
+/* Content --------------------------------------------------------------*/
+
+section#articles {
+  @include columns(7);
+  @include alpha;
+  @include prefix(1);
+  @include trailer(4);
+  .post {
+    @include trailer(1);
+}
+}
+
+aside {
+  @include columns(3);
+  @include omega;
+//  @include leader(4);
+  padding-left: 5.464%;
+  border-left: 1px dotted #CCCCCC;
+}
+
+ul.archives  {
+  @include no-style-list;    
+}
+
+/* Nav --------------------------------------------------------------*/
+
+p.archive_link { 
+  text-align: center;
+  padding: 0.5em 0;
+  border-top: 1px dotted #CCCCCC;
+}
+
+
+/* Footer --------------------------------------------------------------*/
+
+footer {
+  @include full;
+  @include prefix(1);
+  @include trailer(2);
+  #toto {
+    float:right;
+	text-align:right;
+  }
+}

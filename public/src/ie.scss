@@ -8,3 +8,56 @@
 
 @import "base";
 
+body {
+  border-top: 2px solid black;
+}
+
+header[role="logo"] {
+  @include full;
+  @include pad(1,7);
+  @include trailer(1);
+  h1 {
+    padding: 1em 0;
+    text-align:center;
+	background-color: black;
+//	border: 1px dotted #CCCCCC;
+    }	
+	a {
+	  color: white;
+	  text-decoration: none;
+	  }
+}
+
+section {
+  @include columns(11);
+  @include alpha;
+  @include prefix(1);
+  @include trailer(1);
+  article, .archive_link {
+    @include columns(7,11);
+    @include trailer(2); 	
+  }
+  aside {
+    @include columns(3,11);
+    @include omega(11);
+  }
+}
+
+p.archive_link { 
+  text-align: center;
+}
+
+ul.archives  {
+  @include no-style-list;    
+}
+
+
+
+footer {
+  @include full;
+  @include prefix(1);
+  #toto {
+    float:right;
+	text-align:right;
+  }
+}

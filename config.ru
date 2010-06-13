@@ -13,10 +13,10 @@ toto = Toto::Server.new do
   set :title, "Daria's place"
   set :date, lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
   set :ext, "txt"
-  set :url,     'http://daria-ro-blog.heroku.com'
-  set :root,      "index"                                   # page to load on /
-  set :markdown,  :smart                                    # use markdown + smart-mode
-  set :summary,   :max => 150, :delim => /~/                # length of article summary and delimiter
+  set :url, 'http://daria-ro-blog.heroku.com'
+  set :root, "index"                                   # page to load on /
+  set :markdown, :smart                                    # use markdown + smart-mode
+  set :summary, :max => 150, :delim => /~/                # length of article summary and delimiter
   # set :disqus,    false                                     # disqus id, or false
   # set :cache,      28800                                    # cache duration, in seconds
 

@@ -1,18 +1,42 @@
 <!doctype html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/screen.css">
     <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+	<script type="text/javascript" src="http://use.typekit.com/nvi5awx.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <title><%= title %></title>
+  	<!-- Internet Explorer HTML5 enabling script: -->
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<style type="text/css">
+
+				.clear {
+					zoom: 1;
+					display: block;
+				}
+	</style-->
+	<![endif]>
   </head>
   <body>
-    <section>
-      <%= yield %> 
-    </section>
-    <footer>
-      ERB! powered by <a href="http://cloudhead.io/toto">toto</a>
-    </footer>
+    <div id="page">
+	  <header role="logo"><h1 class="tk-blackout-2am"><a href="/" rel="home">Daria-ro</a></h1></header>
+      <section id="articles"> 
+		<%= yield %>
+	  </section>
+	  <aside>
+	 	<h3>Note</h3>
+	  	<p>We can add side-notes here<p>
+	  </aside>
+      <footer>
+        <div id="toto">
+			Создан с помощью <a href="http://cloudhead.io/toto">toto</a><br />
+			Легчайшим блог-движком в стране Оз!
+		</div>
+		&copy; 2010 Дарья Росюк.
+      </footer> 
+    </div>
   </body>
 </html>
 

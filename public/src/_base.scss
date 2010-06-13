@@ -1,9 +1,3 @@
-//**
-//  Susy: Un-obtrusive grids for designers
-//  By: Eric A. Meyer and OddBird
-//  Site: www.oddbird.net/susy/
-//**
-
 // Font Sizes --------------------------------------------------------------
 
 $base-font-size: 16px;
@@ -16,13 +10,15 @@ $col-width: 4em;
 $gutter-width: 1em;
 $side-gutter-width: $gutter-width;
 
+// $side-gutter-width: 100% - ($total-cols*$col-width + ($total-cols-1)*$gutter-width)/2
+
 // Don't move this @import above the GRID and FONT-SIZE variables.
 @import "susy/susy";
 
 // Colors --------------------------------------------------------------
 
 $base: #4c4c4c;
-$alt: #005498;
+$alt: black;
 
 // Fonts --------------------------------------------------------------
 
