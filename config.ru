@@ -25,15 +25,15 @@ toto = Toto::Server.new do
 end
 
 # Redirect non-www to www
-# gem 'rack-rewrite', '~> 0.2.1'
-# require 'rack-rewrite'
-# 	if ENV['RACK_ENV'] == 'production'
-# 		use Rack::Rewrite do
-# 		  r301 %r{.*}, 'http://daria-ro-blog.heroku.com$&', :if => Proc.new {|rack_env|
-# 		  rack_env['SERVER_NAME'] != 'http://daria-ro-blog.heroku.com'
-# 		}
-# 	end
-# end
+gem 'rack-rewrite', '~> 0.2.1'
+require 'rack-rewrite'
+ 	if ENV['RACK_ENV'] == 'production'
+ 		use Rack::Rewrite do
+ 		  r301 %r{.*}, 'http://www.dariaro.com$&', :if => Proc.new {|rack_env|
+ 		  rack_env['SERVER_NAME'] != 'http://dariaro.com'
+ 		}
+ 	end
+ end
 
 run toto
 
