@@ -1,16 +1,15 @@
 <section class="archives">
 	<h1>Все посты</h1>
+	<% [2010,].each do |year| %>
 	<section class="archive_set">
-		<span class="archive_year">2010</span>
-		<ul>
-  			<% if archives.length > 0 %>
-    		<% for entry in archives %>
-      		<li>
-        		<a href="<%= entry.path %>"><%= entry.header %></a>
-      		</li>
-    		<% end %>
-  			<% end %>
+	  <span class="archive_year"><%= year %></span>
+	  	  <ul>
+		  	<% @articles.select {|a| a[:date].year == year }.each do |article| %>	
+			<li>
+					<a href="<%= article.path %>"><%= article.title %></a>
+			</li>
+			<% end %>	
 		</ul>
 	</section>
+	<% end %>
 </section>
-
