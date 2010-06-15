@@ -1,4 +1,4 @@
-title: Ah. Odessa
+title: "ah-odessa"
 author: @daria_ro
 date: 2010/06/12
 header: "Ах, Одесса.."

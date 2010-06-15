@@ -1,4 +1,4 @@
-title: "Me 40weeks and Propeller"
+title: "me-40weeks-and-propeller"
 author: @daria_ro
 date: 2010/05/21
 header: "я, 40 недель и наши премии"

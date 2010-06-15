@@ -1,4 +1,4 @@
-title: "too much"
+title: "too-much"
 author: @daria_ro
 date: 2010/05/24
 header: "too much"

@@ -1,4 +1,4 @@
-title: "May Trip 2010"
+title: "may-trip-2010"
 author: @daria_ro
 date: 2010/05/16
 header: "Дневник May Trip 2010 - через 2 дня после возвращения"
