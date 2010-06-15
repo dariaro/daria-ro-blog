@@ -1,0 +1,8 @@
+title: "link-ro-post"
+date: 2010/06/1
+header: "Заголовок для ссылки"
+category: link
+ext_link: http://link.com
+thumb: http://ссылка на cкриншот в skitch
+
+Текст описания
