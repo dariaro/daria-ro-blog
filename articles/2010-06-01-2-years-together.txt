@@ -2,6 +2,7 @@ title: 2 Years Together
 author: @daria_ro
 date: 2010/06/1
 header: "2 года вместе!"
+category: article
 
 Сегодня у нас маленький праздник – мы вместе 2 года! Я и Сашик.
 

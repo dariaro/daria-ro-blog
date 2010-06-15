@@ -1,1 +1,6 @@
-
+<section id="articles"> 
+<ul>
+<% @articles.select {|a| a[:category] == 'article' }[0...10].each do |article| %>
+   <li> <a href="<%= article.path %>"><%= article.title %></a></li>
+<% end %>
+</section>

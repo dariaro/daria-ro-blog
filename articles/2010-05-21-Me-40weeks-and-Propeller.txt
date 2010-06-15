@@ -2,6 +2,7 @@ title: "Me 40weeks and Propeller"
 author: @daria_ro
 date: 2010/05/21
 header: "я, 40 недель и наши премии"
+category: article
 
 Я узнала о нем в числе первых.
 Я была с ним с самого начала.
