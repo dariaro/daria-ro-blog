@@ -2,12 +2,33 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="/css/screen.css">
-    <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+    <link rel="alternate" type="application/rss+xml" title="<%= title %> - feed" href="/index.xml" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+  	<!-- SEO meta tags -->
+	<!--meta name="description" content="<%= @context[:description] || 'Default description goes here if the description meta is unavailable' %>" /-->
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="" /> 
+	
+	<!-- Typekit -->
+  	
 	<script type="text/javascript" src="http://use.typekit.com/nvi5awx.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <title><%= title %></title>
+	<!-- Blog Title -->
+  	
+	<title>
+			<% if @path == 'index' %>
+				<%= title%>
+			<% elsif @path.split('/').compact.length == 4 %>
+				Дарья Росюк – <%= header %>
+			<% else %>
+				Дарья Росюк – <%= @path.capitalize.gsub(/[-]/, ' ') %>
+			<% end %>
+		</title>
+		
   	<!-- Internet Explorer HTML5 enabling script: -->
+
 	<!--[if IE]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<style type="text/css">
