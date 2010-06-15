@@ -12,9 +12,9 @@
 
 #page {
   @include container;
-  @include show-grid("grid.png");
+//  @include show-grid("grid.png");
   * {
-    background-color: rgba(0,0,0,.125);
+//    background-color: rgba(0,0,0,.125);
   }
 }
 
