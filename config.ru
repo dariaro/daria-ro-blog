@@ -3,6 +3,7 @@ require 'toto'
 # Rack config
 use Rack::Static, :urls => ['/css', '/js', '/images', '/favicon.ico'], :root => 'public'
 use Rack::CommonLogger
+
 #use Rack::ShowExceptions
 #if ENV['RACK_ENV'] == 'development'
 # use Rack::ShowExceptions
@@ -24,15 +25,15 @@ toto = Toto::Server.new do
 end
 
 # Redirect www to non-www
-gem 'rack-rewrite', '~> 0.2.1'
-require 'rack-rewrite'
-  if ENV['RACK_ENV'] == 'production'
-    use Rack::Rewrite do
-      r301 %r{.*}, 'http://dariaro.com$&', :if => Proc.new  do |rack_env|
-        rack_env['SERVER_NAME'] != 'dariaro.com'
-      end
-    end
-end
+#gem 'rack-rewrite', '~> 0.2.1'
+#require 'rack-rewrite'
+#  if ENV['RACK_ENV'] == 'production'
+#    use Rack::Rewrite do
+#      r301 %r{.*}, 'http://dariaro.com$&', :if => Proc.new  do |rack_env|
+#        rack_env['SERVER_NAME'] != 'dariaro.com'
+#      end
+#    end
+#end
 
 run toto
 
