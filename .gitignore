@@ -1,9 +1,4 @@
-log/*.log 
-tmp/* 
-tmp/**/* 
-doc/api 
-doc/app 
-db/*.sqlite3 
+public/.sass-cach/*
 *.swp
 * ̃ 
 .DS_Store
