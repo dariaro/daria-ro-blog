@@ -158,7 +158,7 @@ img {
 }
 
 @mixin no-style-list {
-  @include no-bullets;
+//  @include no-bullets; // Причина ошибки при компиляции
   margin: 0;
   padding: 0;
 }
