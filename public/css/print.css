@@ -1,369 +1,177 @@
-/* Welcome to Susy. Use this file to define print styles.
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* Welcome to Susy. Use this file to define print styles. Import this file using the following HTML or equivalent: <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
 /* Reset --------------------------------------------------------------*/
 /* line 14, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
-  vertical-align: baseline;
-}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
 
 /* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-body {
-  line-height: 1;
-  color: black;
-  background: white;
-}
+body { line-height: 1; color: black; background: white; }
 
 /* line 19, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
+ol, ul { list-style: none; }
 
 /* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-  vertical-align: middle;
-}
+table { border-collapse: separate; border-spacing: 0; vertical-align: middle; }
 
 /* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
 
 /* line 25, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: "" "";
-}
+q, blockquote { quotes: "" ""; }
 /* line 96, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-}
+q:before, q:after, blockquote:before, blockquote:after { content: ""; }
 
 /* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
+a img { border: none; }
 
 /* HTML5 Reset --------------------------------------------------------------*/
 /* line 107, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-section, article, aside, header, footer, nav, dialog, figure {
-  display: block;
-}
+section, article, aside, header, footer, nav, dialog, figure { display: block; }
 
 /* Body --------------------------------------------------------------*/
 /* line 13, ../src/_defaults.scss */
-body {
-  font-family: 'Adobe Caslon Pro', Caslon, Baskerville, Palatino, 'Palatino Linotype', "Hoefler Text", Garamond, "URW Palladio L", "Book Antiqua", Georgia, serif;
-  color: #4c4c4c;
-}
+body { font-family: 'Adobe Caslon Pro', Caslon, Baskerville, Palatino, 'Palatino Linotype', "Hoefler Text", Garamond, "URW Palladio L", "Book Antiqua", Georgia, serif; color: #4c4c4c; }
 
 /* Links --------------------------------------------------------------*/
 /* line 21, ../src/_defaults.scss */
-a:link, a:visited {
-  color: red;
-  text-decoration: none;
-}
+a:link, a:visited { color: red; text-decoration: none; }
 /* line 25, ../src/_defaults.scss */
-a:focus, a:hover, a:active {
-  color: #660000;
-  text-decoration: none;
-}
+a:focus, a:hover, a:active { color: #660000; text-decoration: none; }
 /* line 29, ../src/_defaults.scss */
-a img {
-  border: none;
-}
+a img { border: none; }
 
 /* Headings --------------------------------------------------------------*/
 /* line 36, ../src/_defaults.scss */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 /* line 38, ../src/_defaults.scss */
-h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
-  margin: 0;
-}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img { margin: 0; }
 
 /* line 43, ../src/_defaults.scss */
-h1 {
-  font-size: 3em;
-  line-height: 1em;
-  margin-bottom: 0.5em;
-}
+h1 { font-size: 3em; line-height: 1em; margin-bottom: 0.5em; }
 
 /* line 48, ../src/_defaults.scss */
-h2 {
-  font-size: 2em;
-  line-height: 1.5em;
-  margin-bottom: 0.75em;
-}
+h2 { font-size: 2em; line-height: 1.5em; margin-bottom: 0.75em; }
 
 /* line 53, ../src/_defaults.scss */
-h3 {
-  font-size: 1.5em;
-  line-height: 1em;
-  margin-bottom: 1em;
-}
+h3 { font-size: 1.5em; line-height: 1em; margin-bottom: 1em; }
 
 /* line 58, ../src/_defaults.scss */
-h4, h5, h6 {
-  margin-bottom: 1.5em;
-  font-weight: bold;
-}
+h4, h5, h6 { margin-bottom: 1.5em; font-weight: bold; }
 
 /* Text --------------------------------------------------------------*/
 /* line 65, ../src/_defaults.scss */
-cite, em, dfn {
-  font-style: italic;
-}
+cite, em, dfn { font-style: italic; }
 
 /* line 69, ../src/_defaults.scss */
-strong, dfn {
-  font-weight: bold;
-}
+strong, dfn { font-weight: bold; }
 
 /* line 73, ../src/_defaults.scss */
-sup, sub {
-  line-height: 0;
-}
+sup, sub { line-height: 0; }
 
 /* line 77, ../src/_defaults.scss */
-abbr, acronym {
-  border-bottom: 1px dotted;
-  cursor: help;
-}
+abbr, acronym { border-bottom: 1px dotted; cursor: help; }
 
 /* line 82, ../src/_defaults.scss */
-address {
-  margin-bottom: 1.5em;
-  font-style: italic;
-}
+address { margin-bottom: 1.5em; font-style: italic; }
 
 /* line 87, ../src/_defaults.scss */
-ins {
-  text-decoration: underline;
-}
+ins { text-decoration: underline; }
 
 /* line 91, ../src/_defaults.scss */
-del {
-  text-decoration: line-through;
-}
+del { text-decoration: line-through; }
 
 /* line 95, ../src/_defaults.scss */
-pre, code, tt {
-  margin: 1.5em;
-  margin-left: -1.5em;
-  padding-left: 1.5em;
-  border-left: 1px dotted;
-  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
-}
+pre, code, tt { margin: 1.5em; margin-left: -1.5em; padding-left: 1.5em; border-left: 1px dotted; font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif; }
 
 /* line 104, ../src/_defaults.scss */
-pre {
-  white-space: pre;
-}
+pre { white-space: pre; }
 
 /* line 108, ../src/_defaults.scss */
-code {
-  display: block;
-}
+code { display: block; }
 
 /* line 112, ../src/_defaults.scss */
-q {
-  font-style: italic;
-}
+q { font-style: italic; }
 /* line 114, ../src/_defaults.scss */
-q em {
-  font-style: normal;
-}
+q em { font-style: normal; }
 
 /* line 119, ../src/_defaults.scss */
-p {
-  margin-bottom: 1.5em;
-}
+p { margin-bottom: 1.5em; }
 
 /* line 123, ../src/_defaults.scss */
-blockquote, q {
-  quotes: "" "";
-}
+blockquote, q { quotes: "" ""; }
 
 /* line 127, ../src/_defaults.scss */
-blockquote {
-  margin: 1.5em;
-  margin-left: -1.5em;
-  padding-left: 1.5em;
-  border-left: 1px solid;
-  font-family: 'Adobe Caslon Pro', Caslon, Baskerville, Palatino, 'Palatino Linotype', "Hoefler Text", Garamond, "URW Palladio L", "Book Antiqua", Georgia, serif;
-  font-style: italic;
-}
+blockquote { margin: 1.5em; margin-left: -1.5em; padding-left: 1.5em; border-left: 1px solid; font-family: 'Adobe Caslon Pro', Caslon, Baskerville, Palatino, 'Palatino Linotype', "Hoefler Text", Garamond, "URW Palladio L", "Book Antiqua", Georgia, serif; font-style: italic; }
 
 /* line 138, ../src/_defaults.scss */
-blockquote:before, blockquote:after, q:before, q:after {
-  content: "";
-}
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
 
 /* Replaced --------------------------------------------------------------*/
 /* line 145, ../src/_defaults.scss */
-img {
-  vertical-align: bottom;
-}
+img { vertical-align: bottom; }
 
 /* Lists --------------------------------------------------------------*/
 /* line 166, ../src/_defaults.scss */
-ol {
-  margin: 0 1.5em 1.5em 0;
-  list-style: decimal;
-}
+ol { margin: 0 1.5em 1.5em 0; list-style: decimal; }
 
 /* line 170, ../src/_defaults.scss */
-ul {
-  margin: 0 1.5em 1.5em 0;
-  list-style: disc;
-}
+ul { margin: 0 1.5em 1.5em 0; list-style: disc; }
 
 /* line 175, ../src/_defaults.scss */
-li ul, li ol {
-  list-style-type: circle;
-  margin: 0 1.5em 0.75em;
-}
+li ul, li ol { list-style-type: circle; margin: 0 1.5em 0.75em; }
 
 /* line 181, ../src/_defaults.scss */
-dl {
-  margin-bottom: 1.5em;
-  border-top-style: solid;
-  border-top-width: 0.063em;
-  padding-top: 1.438em;
-}
+dl { margin-bottom: 1.5em; border-top-style: solid; border-top-width: 0.063em; padding-top: 1.438em; }
 /* line 184, ../src/_defaults.scss */
-dl dt {
-  font-size: 1.125em;
-  line-height: 1.333em;
-  margin-bottom: 0.667em;
-}
+dl dt { font-size: 1.125em; line-height: 1.333em; margin-bottom: 0.667em; }
 
 /* line 190, ../src/_defaults.scss */
-dd {
-  margin-bottom: 1.5em;
-  border-bottom-style: solid;
-  border-bottom-width: 0.063em;
-  padding-bottom: 1.438em;
-}
+dd { margin-bottom: 1.5em; border-bottom-style: solid; border-bottom-width: 0.063em; padding-bottom: 1.438em; }
 
 /* Tables --------------------------------------------------------------*/
 /* tables still need 'cellspacing="0"' in the markup */
 /* line 198, ../src/_defaults.scss */
-table {
-  margin-bottom: 1.5em;
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-}
+table { margin-bottom: 1.5em; width: 100%; border-collapse: separate; border-spacing: 0; }
 
 /* line 205, ../src/_defaults.scss */
-table, td, th {
-  vertical-align: top;
-}
+table, td, th { vertical-align: top; }
 
 /* line 209, ../src/_defaults.scss */
-th, thead th {
-  font-weight: bold;
-}
+th, thead th { font-weight: bold; }
 
 /* line 213, ../src/_defaults.scss */
-th, td, caption {
-  padding: 0.75em;
-  text-align: left;
-  font-weight: normal;
-}
+th, td, caption { padding: 0.75em; text-align: left; font-weight: normal; }
 
 /* line 219, ../src/_defaults.scss */
-th, td {
-  border-bottom-style: solid;
-  border-bottom-width: 0.063em;
-  padding-bottom: 0.688em;
-}
+th, td { border-bottom-style: solid; border-bottom-width: 0.063em; padding-bottom: 0.688em; }
 
 /* line 223, ../src/_defaults.scss */
-tfoot {
-  font-size: 0.875em;
-  line-height: 1.714em;
-}
+tfoot { font-size: 0.875em; line-height: 1.714em; }
 
 /* line 227, ../src/_defaults.scss */
-caption {
-  font-size: 1.5em;
-  line-height: 1em;
-  margin-bottom: 1em;
-}
+caption { font-size: 1.5em; line-height: 1em; margin-bottom: 1em; }
 
 /* Forms --------------------------------------------------------------*/
 /* line 234, ../src/_defaults.scss */
-fieldset {
-  margin-bottom: 1.5em;
-  border-style: solid;
-  border-width: 0.063em;
-  padding: 1.438em;
-}
+fieldset { margin-bottom: 1.5em; border-style: solid; border-width: 0.063em; padding: 1.438em; }
 
 /* line 239, ../src/_defaults.scss */
-legend {
-  font-size: 1.125em;
-  line-height: 1.333em;
-  font-weight: bold;
-}
+legend { font-size: 1.125em; line-height: 1.333em; font-weight: bold; }
 
 /* line 244, ../src/_defaults.scss */
-label {
-  font-weight: bold;
-}
+label { font-weight: bold; }
 
 /* line 248, ../src/_defaults.scss */
-textarea, input:not([type="radio"]) {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-}
+textarea, input:not([type="radio"]) { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; width: 100%; }
 
 /* Print Defaults --------------------------------------------------------------*/
 /* line 12, ../src/print.scss */
-nav {
-  display: none;
-}
+nav { display: none; }
 
 /* line 16, ../src/print.scss */
-* {
-  float: none !important;
-  background: none;
-}
+* { float: none !important; background: none; }
 
 /* line 21, ../src/print.scss */
-body {
-  font-family: 'Adobe Caslon Pro', Caslon, Baskerville, Palatino, 'Palatino Linotype', "Hoefler Text", Garamond, "URW Palladio L", "Book Antiqua", Georgia, serif;
-  font-size: 12pt;
-  background: white;
-  color: black;
-}
+body { font-family: 'Adobe Caslon Pro', Caslon, Baskerville, Palatino, 'Palatino Linotype', "Hoefler Text", Garamond, "URW Palladio L", "Book Antiqua", Georgia, serif; font-size: 12pt; background: white; color: black; }
 
 /* line 27, ../src/print.scss */
-a:link:after, a:visited:after {
-  content: " (" attr(href) ") ";
-}
+a:link:after, a:visited:after { content: " (" attr(href) ") "; }
